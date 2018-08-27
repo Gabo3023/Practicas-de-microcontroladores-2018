@@ -1,7 +1,7 @@
-// 0.Secci髇 de documentaci髇 
+// 0.Secci贸n de documentaci贸n 
 // main.c
 // Dispositivo: PIC16F18877
-// Pr醕tica 1.1 
+// Pr谩ctica 1.1 
 // Autores: Gabriel Casarrubias Guerrero
 // Fecha: Agosto 14, 2018
 
@@ -11,9 +11,9 @@
 //Outputs***********************************************************************
 // LED en RB0
 
-// 1. Secci髇 Directivas pre-proceso
-// Incluir librer韆s
-#include <xc.h>  //Esta es la librer韆 principal del compilador
+// 1. Secci贸n Directivas pre-proceso
+// Incluir librer铆as
+#include <xc.h>  //Esta es la librer铆a principal del compilador
 //en ella se encuentran todas las definiciones para el microcontrolador utilizado
 #include "config.h"
 // Definiciones
@@ -21,7 +21,7 @@
 // Macros
 
 
-// 2. Secci髇 de declaraciones
+// 2. Secci贸n de declaraciones
 //   Variables Globales
 
 
@@ -29,22 +29,22 @@
 
 
 
-// 3. Secci髇 de subrutinas
+// 3. Secci贸n de subrutinas
 // MAIN: obligatorio para un programa en C
 void main(void) {
     
-    //Configuraci髇 del Oscilador
+    //Configuraci贸n del Oscilador
     //OSCCON1bits.NOSC=0b110;
     // OSCCON1bits.NDIV=0b000;
     OSCFRQbits.HFFRQ=0b101; //Selecciona la frecuencia de 16MHz del INTOSC
-    //Configuraci髇 de puertos
+    //Configuraci贸n de puertos
     PORTB=0;    //Limpia puerto B
     TRISB=0;    //Puerto B como salidas
     ANSELB=0;   //Puerto B como digital
  
 //4. Inicia ciclo infinito
     while(1){
-        LATBbits.LATB0=~LATBbits.LATB0;  //Toggle bits RB0
+        LATBbits.LATB7=~LATBbits.LATB7;  //Toggle bits RB0
         __delay_ms(1000);                //Espera 1 segundo
     }
     return;
