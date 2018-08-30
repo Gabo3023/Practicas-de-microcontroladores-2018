@@ -10,6 +10,7 @@
 // SW1 push button izquierdo es de lógica negativa conectado a RB0
 // SW2 push button derecho es de lógica negativa conectado a RB4
 // LS1 limit switch conectado a RB5
+//Outputs*************************************************************
 // LED rojo conectado a RB2
 // LED azul conectado a RB3
 // Relay conectado  a RB1
